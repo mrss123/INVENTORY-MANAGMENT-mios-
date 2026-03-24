@@ -1,0 +1,105 @@
+/* === Base CSS === */
+
+/* Reset & Box Sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.chart-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    border-left: 6px solid #007bff;
+}
+
+.chart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.chart-container + .chart-container {
+    margin-top: 40px;
+}
+
+/* === Journal Entry Enhancements === */
+
+.journal-entry-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.journal-block {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    padding: 20px;
+    flex: 1;
+    min-width: 320px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.remove-line-btn {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .journal-entry-section {
+        flex-direction: column;
+    }
+}
+
+
+/* Improve spacing between journal sections */
+.journal-block {
+    margin-bottom: 20px;
+}

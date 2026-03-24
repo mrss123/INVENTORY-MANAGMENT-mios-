@@ -1,0 +1,75 @@
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Grouping */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs, Selects, Textareas */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Submit Button */
+button[type="submit"],
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* for the purpose of add space*/
+
+/* Fix overlapping in journal entry inputs */
+.input-group select,
+.input-group input[type="number"] {
+    flex: 1;
+    min-width: 0;
+}
